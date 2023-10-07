@@ -1,0 +1,345 @@
+{
+	"info": {
+		"_postman_id": "5647f370-8f00-439c-a4cf-01412f8df315",
+		"name": "API Rest sin Paginacion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30323935"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/personas"
+			},
+			"response": [
+				{
+					"name": "EjemploGetAllPersonas",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/v1/personas"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Oct 2023 15:10:11 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"nombre\": \"Kath\",\n        \"apellido\": \"Denis\",\n        \"dni\": 26313362,\n        \"domicilio\": {\n            \"id\": 1,\n            \"calle\": \"Truax\",\n            \"numero\": 52,\n            \"localidad\": {\n                \"id\": 1,\n                \"denominacion\": \"CCT\"\n            }\n        }\n    },\n    {\n        \"id\": 2,\n        \"nombre\": \"Letitia\",\n        \"apellido\": \"Balasin\",\n        \"dni\": 28048842,\n        \"domicilio\": {\n            \"id\": 2,\n            \"calle\": \"Thompson\",\n            \"numero\": 400,\n            \"localidad\": {\n                \"id\": 2,\n                \"denominacion\": \"JXA\"\n            }\n        }\n    },\n    {\n        \"id\": 3,\n        \"nombre\": \"Doralynn\",\n        \"apellido\": \"Decourt\",\n        \"dni\": 32288163,\n        \"domicilio\": {\n            \"id\": 3,\n            \"calle\": \"Lighthouse Bay\",\n            \"numero\": 13371,\n            \"localidad\": {\n                \"id\": 3,\n                \"denominacion\": \"KTI\"\n            }\n        }\n    },\n    {\n        \"id\": 4,\n        \"nombre\": \"Deirdre\",\n        \"apellido\": \"O'Donegan\",\n        \"dni\": 38715548,\n        \"domicilio\": {\n            \"id\": 4,\n            \"calle\": \"Hooker\",\n            \"numero\": 3149,\n            \"localidad\": {\n                \"id\": 4,\n                \"denominacion\": \"EIB\"\n            }\n        }\n    },\n    {\n        \"id\": 5,\n        \"nombre\": \"Cori\",\n        \"apellido\": \"Clague\",\n        \"dni\": 27655776,\n        \"domicilio\": {\n            \"id\": 5,\n            \"calle\": \"Forest Dale\",\n            \"numero\": 77,\n            \"localidad\": {\n                \"id\": 5,\n                \"denominacion\": \"FRT\"\n            }\n        }\n    },\n    {\n        \"id\": 6,\n        \"nombre\": \"Allene\",\n        \"apellido\": \"Jocelyn\",\n        \"dni\": 31551663,\n        \"domicilio\": {\n            \"id\": 6,\n            \"calle\": \"Hudson\",\n            \"numero\": 0,\n            \"localidad\": {\n                \"id\": 6,\n                \"denominacion\": \"CUQ\"\n            }\n        }\n    },\n    {\n        \"id\": 7,\n        \"nombre\": \"Adore\",\n        \"apellido\": \"Quinnell\",\n        \"dni\": 40640870,\n        \"domicilio\": {\n            \"id\": 7,\n            \"calle\": \"Novick\",\n            \"numero\": 5,\n            \"localidad\": {\n                \"id\": 7,\n                \"denominacion\": \"OLI\"\n            }\n        }\n    },\n    {\n        \"id\": 8,\n        \"nombre\": \"Selma\",\n        \"apellido\": \"Dickenson\",\n        \"dni\": 30452032,\n        \"domicilio\": {\n            \"id\": 8,\n            \"calle\": \"Hanson\",\n            \"numero\": 523,\n            \"localidad\": {\n                \"id\": 8,\n                \"denominacion\": \"KNJ\"\n            }\n        }\n    },\n    {\n        \"id\": 9,\n        \"nombre\": \"Bridget\",\n        \"apellido\": \"Philpot\",\n        \"dni\": 38508047,\n        \"domicilio\": {\n            \"id\": 9,\n            \"calle\": \"Mayer\",\n            \"numero\": 5858,\n            \"localidad\": {\n                \"id\": 9,\n                \"denominacion\": \"RBX\"\n            }\n        }\n    },\n    {\n        \"id\": 10,\n        \"nombre\": \"Odelia\",\n        \"apellido\": \"Retallack\",\n        \"dni\": 31923866,\n        \"domicilio\": {\n            \"id\": 10,\n            \"calle\": \"Kensington\",\n            \"numero\": 471,\n            \"localidad\": {\n                \"id\": 10,\n                \"denominacion\": \"DSI\"\n            }\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get One",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/personas/3"
+			},
+			"response": [
+				{
+					"name": "EjemploGetOnePersonas",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/v1/personas/3"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Oct 2023 15:24:42 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"nombre\": \"Doralynn\",\n    \"apellido\": \"Decourt\",\n    \"dni\": 32288163,\n    \"domicilio\": {\n        \"id\": 3,\n        \"calle\": \"Lighthouse Bay\",\n        \"numero\": 13371,\n        \"localidad\": {\n            \"id\": 3,\n            \"denominacion\": \"KTI\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 16,\r\n        \"nombre\": \"Julio\",\r\n        \"apellido\": \"Verne\",\r\n        \"biografia\": \"Phasellus in felis. Donec semper sapien a libero. Nam dui.\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/autores"
+			},
+			"response": [
+				{
+					"name": "CreateAutor",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id\": 16,\r\n        \"nombre\": \"Julio\",\r\n        \"apellido\": \"Verne\",\r\n        \"biografia\": \"Phasellus in felis. Donec semper sapien a libero. Nam dui.\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/v1/autores"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Oct 2023 16:25:44 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 16,\n    \"nombre\": \"Julio\",\n    \"apellido\": \"Verne\",\n    \"biografia\": \"Phasellus in felis. Donec semper sapien a libero. Nam dui.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 14,\r\n    \"nombre\": \"Edgar Allan\",\r\n    \"apellido\": \"Poe\",\r\n    \"biografia\": \"lorem ipsum\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/autores/13"
+			},
+			"response": [
+				{
+					"name": "UpdateAutoresConId14",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 14,\r\n    \"nombre\": \"Edgar Allan\",\r\n    \"apellido\": \"Poe\",\r\n    \"biografia\": \"lorem ipsum\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/v1/autores/13"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Oct 2023 16:21:01 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 14,\n    \"nombre\": \"Edgar Allan\",\n    \"apellido\": \"Poe\",\n    \"biografia\": \"lorem ipsum\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/autores/10"
+			},
+			"response": [
+				{
+					"name": "DeleteAutorConId10",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/v1/autores/10"
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Oct 2023 16:11:52 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
